@@ -1,23 +1,13 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+// import Wave from "./components/wave/wave";
+// import Bingwave from "./components/bingwave/Bingwave";
+// import Wave2 from "./components/wave2/Wave2";
+import Wave3 from "./components/wave3/Wave3";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Wave3 />
     </div>
   );
 }
