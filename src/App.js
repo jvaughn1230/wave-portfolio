@@ -1,15 +1,7 @@
 import "./App.css";
-// import Wave from "./components/wave/wave";
-// import Bingwave from "./components/bingwave/Bingwave";
-// import Wave2 from "./components/wave2/Wave2";
-import Wave3 from "./components/wave3/Wave3";
 
 function App() {
-  return (
-    <div className="App">
-      <Wave3 />
-    </div>
-  );
+  return <div className="App">Place Holder</div>;
 }
 
 export default App;
