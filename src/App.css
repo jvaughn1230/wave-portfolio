@@ -8,3 +8,15 @@
 .App {
   text-align: center;
 }
+
+.section {
+  padding: 8rem 0;
+}
+
+.section-header {
+  font-size: var(--section-header);
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+  line-height: 1.2;
+  font-weight: 550;
+}

@@ -1,3 +1,31 @@
+:root {
+  --primary: rgb(21, 161, 169);
+  --orange: rgb(221, 119, 93);
+  --white: rgb(248, 249, 250);
+
+  /* --hero-text: 56px;
+  --section-header: 32px;
+  --sub-header: 24px;
+  --nav-text: 20px;
+  --body-text: 16px;
+  --small-text: 14px;
+  --button-text: 13px; */
+
+  --hero-text: clamp(10px, 3.6458vw, 4rem);
+  --section-header: clamp(10px, 2.0833vw, 3rem);
+  --sub-header: clamp(10px, 1.5625vw, 2.5rem);
+  --regular-text: clamp(10px, 1.0417vw, 2rem);
+  --small-text: clamp(10px, 0.9115vw, 1.5rem);
+
+  /* 18px -- hero sub*/
+  /* 14px button text */
+  /* 16px about text, skills text, contact text, input fields, phone,  */
+  /* 24px skill header */
+  /* 19px  project name on hover*/
+  /* 13px project type on top */
+  /* 14px footer */
+}
+
 * {
   box-sizing: border-box;
 }
@@ -12,6 +40,11 @@ img {
 
 a {
   text-decoration: none;
+  color: var(--orange);
+}
+
+a:hover {
+  opacity: 0.75;
 }
 
 body {

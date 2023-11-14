@@ -1,0 +1,52 @@
+.mailer-container {
+  width: 100%;
+}
+.mailer {
+  display: flex;
+  flex-direction: column;
+  width: 33%;
+  margin-inline: auto;
+}
+
+.mailer textarea,
+.mailer input {
+  border-radius: 0.25rem;
+  border-color: rgb(100 116 139);
+  border: 1px solid;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  font-size: var(--regular-text);
+}
+
+.mailer input {
+  line-height: 2.5rem;
+  padding: 1rem 0.75rem;
+}
+
+.mailer textarea {
+  height: 6rem;
+  padding: 1.5rem 0.75rem 0.5rem 0.75rem;
+}
+
+.mailer-btn {
+  border-radius: 9999px;
+  background-color: #03a89e;
+  padding: 1.25em;
+  font-size: var(--regular-text);
+  margin-top: 1em;
+  margin-bottom: 1em;
+  height: 4rem;
+  color: white;
+  text-align: center;
+  font-weight: 400;
+}
+
+.mailer-btn:hover {
+  opacity: 0.75;
+}
+
+@media (max-width: 900px) {
+  .mailer {
+    width: 80%;
+  }
+}
