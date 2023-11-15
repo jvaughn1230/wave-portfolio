@@ -4,7 +4,7 @@ import "./Projects.css";
 
 const Projects = () => {
   return (
-    <div className="section">
+    <div className="section" id="projects">
       <h2 className="section-header">Projects</h2>
       <div className="projects-container">
         <ProjectCard />

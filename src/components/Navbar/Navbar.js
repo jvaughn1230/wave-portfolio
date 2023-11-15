@@ -1,13 +1,19 @@
 import React, { useState } from "react";
+import { GiHamburgerMenu } from "react-icons/gi";
 import "./Navbar.css";
 
 const Navbar = () => {
-  const [color, setColor] = useState(false);
+  const [scroll, setScroll] = useState(false);
+  const [openNav, setOpenNav] = useState(false);
 
   // Sections
   const sections = ["about", "skills", "projects", "contact"];
-  const newLink = (section) => (
-    <a href={`#${section}`} className="navbar__link">
+  const newLink = (section, index) => (
+    <a
+      key={index}
+      href={`#${section}`}
+      className={`navba-link ${scroll && "navbar-links-scrolled"}`}
+    >
       {section}
     </a>
   );
@@ -16,19 +22,21 @@ const Navbar = () => {
   //   Color Change Effect
   const changeColor = () => {
     if (window.scrollY >= 20) {
-      setColor(true);
+      setScroll(true);
     } else {
-      setColor(false);
+      setScroll(false);
     }
   };
 
   window.addEventListener("scroll", changeColor);
-  console.log(color);
 
   return (
-    <div className="navbar">
+    <div className={`navbar ${scroll && "navbar-scrolled"}`}>
       <div className="navbar-logo">Jeffrey Vaughn</div>
-      <div className="navbar-links">{sectionLinks}</div>
+      <div className="navbar-links">
+        <GiHamburgerMenu className="navbar-menu" />
+        {sectionLinks}
+      </div>
     </div>
   );
 };
