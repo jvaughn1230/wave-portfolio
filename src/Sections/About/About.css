@@ -1,0 +1,25 @@
+.about-section {
+  background-color: var(--primary);
+}
+
+.about-header {
+  color: var(--white);
+}
+
+.about-container {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  padding-inline: 3rem;
+}
+
+.about-col1 {
+  width: 33.333%;
+}
+
+.about-col2 {
+  width: 66.6666%;
+  border: 2px solid black;
+  display: flex;
+  flex-direction: column;
+}

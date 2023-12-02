@@ -5,7 +5,7 @@ import SkillCard from "../../components/SkillCard/SkillCard";
 
 const Skills = () => {
   return (
-    <div id="skills">
+    <div id="skills" className="section">
       <h2 className="section-header">Skills</h2>
       <div className="skills-container">
         <SkillCard />

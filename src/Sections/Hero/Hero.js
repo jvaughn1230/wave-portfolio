@@ -9,7 +9,7 @@ const Hero = () => {
       <Navbar />
       <div className="hero-text">
         <div className="hero-header"> Hello, I'm Jeffrey Vaughn! </div>
-        <Line />
+        <Line color="blue" />
         <div className="hero-subtext">
           I'm a fullstack developer based in Las Vegas, NV
         </div>
