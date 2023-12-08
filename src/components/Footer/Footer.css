@@ -1,0 +1,10 @@
+.footer {
+  font-size: var(--regular-text);
+  color: rgb(108, 117, 125);
+  background-color: rgb(248, 249, 250);
+  padding-block: 3rem;
+}
+
+.footer p {
+  margin-block: 0;
+}
