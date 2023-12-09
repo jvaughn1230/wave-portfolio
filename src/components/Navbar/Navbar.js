@@ -6,13 +6,13 @@ const Navbar = () => {
   const [scroll, setScroll] = useState(false);
   const [openNav, setOpenNav] = useState(false);
 
-  // Sections
+  // Section Links
   const sections = ["about", "skills", "projects", "contact"];
   const newLink = (section, index) => (
     <a
       key={index}
       href={`#${section}`}
-      className={`navba-link ${scroll && "navbar-links-scrolled"}`}
+      className={`navbar-link ${scroll && "navbar-links-scrolled"}`}
     >
       {section}
     </a>
@@ -30,12 +30,26 @@ const Navbar = () => {
 
   window.addEventListener("scroll", changeColor);
 
+  // Mobile Menu Toggler
+  const handleMenuToggle = () => setOpenNav(!openNav);
+
   return (
     <div className={`navbar ${scroll && "navbar-scrolled"}`}>
       <div className="navbar-logo">Jeffrey Vaughn</div>
       <div className="navbar-links">
-        <GiHamburgerMenu className="navbar-menu" />
-        {sectionLinks}
+        {/* Desktop Links */}
+        <div className="desktop-links-container">{sectionLinks}</div>
+
+        {/* Mobile Menu */}
+        <div className="mobile-menu">
+          <GiHamburgerMenu
+            className="hamburger"
+            onClick={() => handleMenuToggle()}
+          />
+          <div className={`${openNav ? "mobile-links-container" : "hide"}`}>
+            {sectionLinks}
+          </div>
+        </div>
       </div>
     </div>
   );
