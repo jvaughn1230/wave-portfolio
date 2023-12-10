@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "./ProjectCard.css";
 import dinobeach from "../../assets/dinobeach.png";
+import Modal from "../Modal/Modal";
 
 const ProjectCard = (project) => {
   const [hovered, setHovered] = useState(false);

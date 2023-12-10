@@ -13,6 +13,9 @@ const Hero = () => {
         <div className="hero-subtext">
           I'm a fullstack developer based in Las Vegas, NV
         </div>
+        <button className="hero-btn" href="#about">
+          Find Out More
+        </button>
       </div>
     </div>
   );

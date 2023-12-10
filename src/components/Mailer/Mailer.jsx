@@ -73,6 +73,7 @@ const Mailer = () => {
           placeholder="Your Message"
           required
         />
+
         <button type="submit" className="mailer-btn">
           Send
         </button>
