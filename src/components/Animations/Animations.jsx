@@ -1,18 +1,39 @@
 import React from "react";
 import "./Animations.css";
-import Wave3 from "../wave3/Wave3";
+import { useInView } from "react-intersection-observer";
 
 const Animations = () => {
+  const { ref: viewRef, inView: sectionVisible } = useInView({
+    triggerOnce: true,
+  });
+
   return (
     <div className="full">
+      {/* Top Section */}
       <div className="section1">Section 1</div>
+
+      {/* Wave section */}
       <div className="section2">
-        <Wave3 />
+        <h3>Top</h3>
+        <div className="waves">
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
       </div>
-      <div className="section3">
-        Section 3<div className="cover">Cover</div>
+
+      {/* Blue Section */}
+      <div className="section4">
+        <h1>Section 4</h1>
       </div>
-      <div className="section4">Section 4</div>
+
+      {/* Pullaway section */}
+      <div className="section3" ref={viewRef}>
+        <div className={`${sectionVisible ? "remove-cover" : ""} cover`}>
+          Cover
+        </div>
+        Section 3
+      </div>
     </div>
   );
 };

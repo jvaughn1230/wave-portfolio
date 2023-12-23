@@ -3,8 +3,10 @@ import "./wave3.css";
 
 const Wave3 = () => {
   return (
-    <div className="wavefix">
-      <div className="box">Wave3</div>
+    <div className="wave3">
+      <div className="wave"></div>
+      <div></div>
+      <div></div>
     </div>
   );
 };
