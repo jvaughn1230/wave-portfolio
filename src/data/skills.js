@@ -1,20 +1,38 @@
 import { FaReact } from "react-icons/fa";
 import { IoLogoJavascript } from "react-icons/io5";
-import { FaHtml5 } from "react-icons/fa";
 import { FaCss3Alt } from "react-icons/fa";
-import { SiTailwindcss } from "react-icons/si";
-import { FaBootstrap } from "react-icons/fa";
 import { FaNodeJs } from "react-icons/fa6";
-import { SiExpress } from "react-icons/si";
 import { DiMongodb } from "react-icons/di";
-import { SiMongoose } from "react-icons/si";
-import { IoLogoFirebase } from "react-icons/io5";
-import { BiLogoPostgresql } from "react-icons/bi";
-import { SiRedux } from "react-icons/si";
-import { SiPostman } from "react-icons/si";
-import { SiAxios } from "react-icons/si";
 
 export const skills = [
-  { name: "ReactJS", icon: FaReact },
-  { name: "JavaScript", icon: IoLogoJavascript },
+  { id: 1, name: "ReactJS", icon: FaReact, summary: "I Love React" },
+  {
+    id: 2,
+    name: "JavaScript",
+    icon: IoLogoJavascript,
+    summary: "I Love JavaScript",
+  },
+  { id: 3, name: "NodeJS", icon: FaNodeJs, summary: "I love node & Express" },
+  {
+    id: 4,
+    name: "Database Development",
+    icon: DiMongodb,
+    summary: "I Love databases",
+  },
+  {
+    id: 5,
+    name: "Styling",
+    icons: FaCss3Alt,
+    summary: "Yay CSS",
+  },
 ];
+
+// Skills
+//Styling ---> Tailwind CSS, CSS, SaSS
+//HTML/XML
+//React Ecosystem: React, React Router,
+//JavaScript
+//NodeJS/ExpressJS
+//DB: NoSQL & SQL, Firebase, PostgreSQL, MongoDB/Mongoose
+//APIs: Axios, Fetch, RTK Query
+//Redux

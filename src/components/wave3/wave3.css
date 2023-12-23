@@ -8,7 +8,7 @@
     radial-gradient(52.84px at 50% -43.5px, #0000 99%, #000 101%) 50% 30px/120px
       100% repeat-x;
 
-  animation: waveAnimation 300s linear infinite;
+  animation: waveAnimation 300s linear infinite alternate;
 }
 
 @keyframes waveAnimation {
@@ -24,6 +24,6 @@
 .wavefix {
   height: 500px;
   border: 2px solid pink;
-  width: 500px;
+  width: 100%;
   overflow: hidden;
 }
