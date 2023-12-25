@@ -7,7 +7,8 @@
 .section1,
 .section2,
 .section3,
-.section4 {
+.section4,
+.section5 {
   height: 100vh;
   width: 100vw;
   overflow-x: hidden;
@@ -104,4 +105,91 @@
   100% {
     transform: translateY(2000%);
   }
+}
+
+/******* Card Flip  ********************/
+
+.testcard-container {
+  display: flex;
+  justify-content: space-around;
+}
+
+.test-card1,
+.test-card2 {
+  height: 150px;
+  width: 150px;
+  transition: 0.5s ease;
+  opacity: 0;
+  transform: perspective(10em) rotateX(23deg);
+  border: 2px solid black;
+}
+
+.showcard {
+  opacity: 1;
+  transform: perspective(10em) rotateX(0deg);
+}
+
+.test-card1 {
+  background-color: orange;
+}
+
+.test-card2 {
+  background-color: aqua;
+}
+
+/***** Underline Effect *****/
+.test-nav {
+  width: 60%;
+  display: flex;
+  justify-content: space-around;
+  /* transform: translate(0 173.778); */
+  background-color: aqua;
+}
+
+.hover-underline-animation {
+  display: inline-block;
+  position: relative;
+  color: #0087ca;
+}
+
+.hover-underline-animation::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #0087ca;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.hover-underline-animation:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+/********* Pull Up Animation  *****/
+.pullup-container {
+  height: 150px;
+  width: 150px;
+  border: 2px solid black;
+  position: relative;
+  overflow: hidden;
+}
+
+.hide2 {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  /* z-index: 2; */
+  border: 1px solid pink;
+  top: 0;
+  background-color: red;
+}
+
+.reveal-drop {
+  transition: 2s ease;
+  transform: translateY(-110%);
 }
