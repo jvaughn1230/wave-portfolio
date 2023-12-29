@@ -1,5 +1,6 @@
 .about-section {
   background-color: var(--primary);
+  position: relative;
 }
 
 .about-header {
@@ -32,4 +33,64 @@
   line-height: 24px;
   text-align: center;
   font-family: "Meriweather";
+}
+
+/* Animations */
+/* TODO: Change background waves to responsive (likely need a calc) */
+.waves {
+  overflow: hidden;
+  /* height: 100vh; */
+  width: 100vw;
+  z-index: 3;
+  /* position: absolute; */
+  /* bottom: -2px; */
+  /* display: block; */
+  height: 200px;
+  width: 1000%;
+  position: relative;
+  bottom: 325px;
+  /* bottom: 0px; */
+  /* top: 0; */
+}
+
+.waves div {
+  background-color: #293050;
+  mask: radial-gradient(52.84px at 50% 73.5px, #000 99%, #0000 101%)
+      calc(50% - 60px) 0/120px 100%,
+    radial-gradient(52.84px at 50% -43.5px, #0000 99%, #000 101%) 50% 30px/120px
+      100% repeat-x;
+
+  overflow: hidden;
+  position: absolute;
+}
+
+.waves div:nth-child(1) {
+  height: 100px;
+  width: 6000px;
+  bottom: 0;
+
+  animation: move-wave 60s infinite linear;
+}
+
+.waves div:nth-child(2) {
+  height: 100px;
+  width: 200%;
+  opacity: 0.5;
+  bottom: 10px;
+}
+.waves div:nth-child(3) {
+  right: 8px;
+  height: 100px;
+  width: 200%;
+  opacity: 0.5;
+  bottom: 10px;
+}
+
+@keyframes move-wave {
+  50% {
+    transform: translateX(-3000px);
+  }
+  100% {
+    transform: translateX(0px);
+  }
 }

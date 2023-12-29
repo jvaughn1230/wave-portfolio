@@ -1,5 +1,8 @@
 :root {
-  --primary: rgb(21, 161, 169);
+  --primary: #2a3050;
+  --secondary: #8aadd9;
+
+  /* rgb(21, 161, 169); */
   --orange: rgb(221, 119, 93);
   --white: rgb(248, 249, 250);
   --faded-white: rgba(248, 249, 250, 0.75);

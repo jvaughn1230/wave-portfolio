@@ -9,6 +9,11 @@ const About = () => {
 
   return (
     <div id="about" className="about-section section">
+      <div className="waves">
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
       <div className="about-container">
         <div className="about-col1">
           <img src={profilePic} alt="profile" />
