@@ -6,6 +6,8 @@ import { skills } from "../../data/skills";
 import SkillCard from "../../components/SkillCard/SkillCard";
 import SkillPill from "../../components/SkillPill/SkillPill";
 
+import WaveyButton from "../../components/WaveyButton/WaveyButton";
+
 console.log(skills);
 
 const Skills = () => {
@@ -13,7 +15,7 @@ const Skills = () => {
     <div id="skills" className="section">
       <h2 className="section-header">Skills</h2>
       <div className="skills-container">
-        <SkillPill skill={skills[0]} />
+        {/* <SkillPill skill={skills[0]} /> */}
         {/* <SkillCard />
         <SkillCard />
         <SkillCard />

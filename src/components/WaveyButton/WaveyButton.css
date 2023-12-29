@@ -1,0 +1,146 @@
+/* .waveybutton {
+  position: relative;
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 16px;
+  text-align: center;
+  text-decoration: none;
+  color: #ffffff;
+  background-color: #3498db;
+  border: none;
+  border-radius: 8px;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.waveybutton::before,
+.waveybutton::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.waveybutton::before {
+  background: linear-gradient(90deg, transparent, #ffffff, transparent);
+  animation: wave-animation 1s infinite linear;
+}
+
+.waveybutton::after {
+  background: linear-gradient(90deg, transparent, #3498db, transparent);
+  animation: wave-animation-reverse 1s infinite linear;
+}
+
+@keyframes wave-animation {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+@keyframes wave-animation-reverse {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+} */
+
+.waveybutton {
+  position: relative;
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 16px;
+  text-align: center;
+  text-decoration: none;
+  color: #ffffff;
+  background-color: #3498db;
+  border: none;
+  border-radius: 15px; /* Adjust the radius based on your preference */
+  overflow: hidden;
+  cursor: pointer;
+  clip-path: polygon(0 0, 100% 0, 100% 85%, 50% 100%, 0 85%);
+}
+
+.waveybutton::before,
+.waveybutton::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.waveybutton::before {
+  background: linear-gradient(90deg, transparent, #ffffff, transparent);
+  animation: wave-animation 1s infinite linear;
+}
+
+.waveybutton::after {
+  background: linear-gradient(90deg, transparent, #3498db, transparent);
+  animation: wave-animation-reverse 1s infinite linear;
+}
+
+@keyframes wave-animation {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+@keyframes wave-animation-reverse {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+/* BUtton 2 */
+
+.button2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background: linear-gradient(to bottom, sandybrown, chocolate);
+  height: 50px;
+  position: relative;
+  margin-bottom: 20px;
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    /* background-repeat: repeat-x; */
+  }
+
+  &::before {
+    height: 10px;
+    background-size: 20px 20px;
+    background-image: radial-gradient(
+      circle at 10px -5px,
+      transparent 12px,
+      white 13px
+    );
+  }
+
+  &::after {
+    height: 15px;
+    background-size: 40px 20px;
+    background-image: radial-gradient(
+      circle at 10px 15px,
+      white 12px,
+      transparent 13px
+    );
+  }
+}
