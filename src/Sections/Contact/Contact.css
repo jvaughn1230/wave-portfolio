@@ -1,0 +1,24 @@
+.contact-section {
+  overflow: hidden;
+  max-height: 100vh;
+  position: relative;
+}
+
+.cover {
+  height: 100%;
+  width: 100%;
+  z-index: 2;
+  background-color: blue;
+  position: absolute;
+}
+
+.remove-cover {
+  animation: remove-cover 8s ease forwards 0.25s;
+  animation-delay: 0.25s;
+}
+
+@keyframes remove-cover {
+  100% {
+    transform: translateY(2000%);
+  }
+}
