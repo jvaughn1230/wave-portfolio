@@ -4,6 +4,8 @@
   transition: 0.5s ease;
   opacity: 0;
   transform: perspective(10em) rotateX(23deg);
+  background-color: var(--primary);
+  color: white;
 }
 
 .show-skill-card {
@@ -12,7 +14,7 @@
 }
 
 .skill-icon {
-  color: var(--primary);
+  color: white;
   margin-bottom: 8px;
 }
 

@@ -3,7 +3,6 @@ import "./Animations.css";
 import { useInView } from "react-intersection-observer";
 
 // TODO: Add Wave To Header
-// TODO: Add Card Flip to Skills
 // TODO: Add tranistion to Projects
 // TODO: Add Color Change to About Section
 // TODO: Add some animation cartoons
