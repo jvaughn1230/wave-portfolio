@@ -3,10 +3,10 @@
   padding-top: 2rem;
   padding-bottom: 1rem;
   padding-inline: 6.25rem;
-  width: 100%;
-  /* background-color: aqua; */
+  width: 100vw;
   position: fixed;
   justify-content: space-between;
+  z-index: 9999;
 }
 
 .navbar-scrolled {
@@ -32,6 +32,12 @@
   line-height: 21.6px;
 }
 
+.desktop-links-container {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+
 .navbar-links-scrolled {
   color: black;
 }
@@ -40,38 +46,47 @@
   display: none;
 }
 
-/* Animation */
-.navbar-link::after {
-  content: "";
-  position: absolute;
-  width: 100%;
-  transform: scaleX(0);
-  height: 2px;
-  bottom: 0;
-  left: 0;
-  background-color: #0087ca;
-  transform-origin: bottom right;
-  transition: transform 0.25s ease-out;
-}
+/* Desktop Underline Animation */
+@media (min-width: 900px) {
+  .navbar-link::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #0087ca;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+  }
 
-.navbar-link:hover::after {
-  transform: scaleX(1);
-  transform-origin: bottom left;
+  .navbar-link:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }
 }
 
 @media (max-width: 900px) {
   .navbar {
-    background-color: var(--white);
+    background-color: var(--primary);
+    padding-top: 1rem;
+    padding-bottom: 0.25rem;
+    padding-inline: 2.5%;
+    /* justify-content: space-between; */
   }
 
   .mobile-menu {
     display: block;
+    width: 100%;
+    text-align: end;
+    padding-right: 0.75rem;
   }
 
-  .hamburger {
-    height: auto;
-    width: 10vw;
-    min-width: 70px;
+  .navbar-logo,
+  .mobile-menu {
+    align-self: self-end;
+    padding-bottom: 0.25rem;
   }
 
   .desktop-links-container {
@@ -79,20 +94,30 @@
   }
 
   .mobile-links-container {
-    display: block;
-  }
-
-  .mobile-links-container {
     display: flex;
     flex-direction: column;
+    gap: 0.5rem;
     /* position: relative; */
+    justify-content: center;
+    width: 100%;
     z-index: 5;
+    /* border: 2px solid white; */
+
+    /* New Code Styles */
+    position: absolute;
+    left: 0;
+    text-align: center;
+    background-color: var(--primary);
+    padding-top: 0.5rem;
   }
 
   .navbar-link {
-    line-height: 24px;
-    width: 100vw;
-    background-color: aquamarine;
-    font-size: 14px;
+    line-height: 48px;
+    font-size: 28px;
+    padding-top: 1rem;
+  }
+
+  .mobile-links-container:last-child {
+    padding-bottom: 0.5rem;
   }
 }
