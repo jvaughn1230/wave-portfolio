@@ -18,7 +18,7 @@ function App() {
       <Contact />
 
       <Footer />
-      <svg
+      {/* <svg
         xmlns="http://www.w3.org/2000/svg"
         width="448"
         height="127.485"
@@ -29,7 +29,7 @@ function App() {
           transform="translate(-1.866 -1.866)"
           fill="#d0614d"
         ></path>
-      </svg>
+      </svg> */}
 
       <Slider />
     </div>

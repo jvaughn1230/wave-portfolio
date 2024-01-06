@@ -1,7 +1,6 @@
 .project-card {
   width: 33%;
   position: relative;
-  /* position: absolute; */
 }
 
 .main-image {
@@ -12,12 +11,13 @@
 .portfolio-box {
   background-color: rgba(22, 208, 255, 0.9);
   position: absolute;
+  z-index: auto;
   top: 0;
   height: 100%;
   width: 100%;
 }
 
-.open-modal {
+/* .open-modal {
   position: fixed;
   background-color: rgba(0, 0, 0, 0.3);
   height: 100vh;
@@ -28,7 +28,7 @@
   align-items: center;
   justify-content: center;
   backdrop-filter: 30px;
-}
+} */
 
 .temp-content {
   height: 75%;
@@ -36,5 +36,5 @@
   border: 2px solid white;
 }
 
-.project-card:hover {
-}
+/* .project-card:hover {
+} */

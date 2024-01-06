@@ -1,19 +1,35 @@
-import React from "react";
-import "./Slider.css";
+import React, { useState } from "react";
+import "./Slider";
 
-import ImageSlider from "../ImageSlider/ImageSlider";
+import { MdOutlineArrowBackIos } from "react-icons/md";
+import { MdOutlineArrowForwardIos } from "react-icons/md";
 
-import Img1 from "../../assets/dinobeach.png";
-import Img2 from "../../assets/simplescanner.png";
-import Img3 from "../../assets/riptide.png";
-import Img4 from "../../assets/palmclothing.png";
+import Image1 from "../../assets/dinobeach.png";
+import Image2 from "../../assets/simplescanner.png";
+import Image3 from "../../assets/riptide.png";
+import Image4 from "../../assets/palmclothing.png";
 
-const IMAGES = [Img1, Img2, Img3, Img4];
-
+// TODO: Add IMage Prop
 const Slider = () => {
+  //   const length = images.length;
+  const [current, setCurrent] = useState(0);
+
+  const imageUrls = [Image1, Image2, Image3, Image4];
+
+  const length = imageUrls.length;
+
+  console.log(length);
+
   return (
-    <div className="slider-container">
-      <ImageSlider imageUrls={IMAGES} className="slider-image" />;
+    <div className="slider">
+      <button className="slider-btn slider-btn-back">
+        <MdOutlineArrowBackIos />
+      </button>
+      <button className="slider-btn slider-btn-next">
+        <MdOutlineArrowForwardIos />
+      </button>
+
+      <img src={imageUrls[current]} alt="project" className="slider-image" />
     </div>
   );
 };
