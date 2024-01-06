@@ -6,7 +6,6 @@ import Skills from "./Sections/Skills/Skills";
 import Contact from "./Sections/Contact/Contact";
 import Projects from "./Sections/Projects/Projects";
 import Footer from "./components/Footer/Footer";
-import Slider from "./components/Slider/Slider";
 
 function App() {
   return (
@@ -30,8 +29,6 @@ function App() {
           fill="#d0614d"
         ></path>
       </svg> */}
-
-      <Slider />
     </div>
   );
 }
