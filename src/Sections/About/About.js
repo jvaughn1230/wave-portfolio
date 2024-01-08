@@ -22,7 +22,7 @@ const About = () => {
           <h2 className="section-header about-header">About Me</h2>
           <Line color="white" />
           <p className="about-text">{summary}</p>
-          <button>Get Started!</button>
+          <button href="#skills">Find Out More</button>
         </div>
       </div>
     </div>

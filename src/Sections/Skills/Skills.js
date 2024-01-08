@@ -6,7 +6,6 @@ import { skills } from "../../data/skills";
 import SkillCard from "../../components/SkillCard/SkillCard";
 import SkillPill from "../../components/SkillPill/SkillPill";
 
-import WaveyButton from "../../components/WaveyButton/WaveyButton";
 import { IoFishSharp } from "react-icons/io5";
 
 console.log(skills);
