@@ -17,6 +17,55 @@ const Hero = () => {
           Find Out More
         </button>
       </div>
+
+      {/* Bubbles */}
+      <div className="bubble-wrapper">
+        <div>
+          <span class="dot"></span>
+        </div>
+        <div>
+          <span class="dot"></span>
+        </div>
+        <div>
+          <span class="dot"></span>
+        </div>
+        <div>
+          <span class="dot"></span>
+        </div>
+        <div>
+          <span class="dot"></span>
+        </div>
+        <div>
+          <span class="dot"></span>
+        </div>
+        <div>
+          <span class="dot"></span>
+        </div>
+        <div>
+          <span class="dot"></span>
+        </div>
+        <div>
+          <span class="dot"></span>
+        </div>
+        <div>
+          <span class="dot"></span>
+        </div>
+        <div>
+          <span class="dot"></span>
+        </div>
+        <div>
+          <span class="dot"></span>
+        </div>
+        <div>
+          <span class="dot"></span>
+        </div>
+        <div>
+          <span class="dot"></span>
+        </div>
+        <div>
+          <span class="dot"></span>
+        </div>
+      </div>
     </div>
   );
 };
