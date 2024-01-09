@@ -13,57 +13,57 @@ const Hero = () => {
         <div className="hero-subtext">
           I'm a fullstack developer based in Las Vegas, NV
         </div>
-        <button className="hero-btn btn" href="#about">
+        <a className="hero-btn btn" href="#about">
           Find Out More
-        </button>
+        </a>
       </div>
 
       {/* Bubbles */}
       <div className="bubble-wrapper">
         <div>
-          <span class="dot"></span>
+          <span className="dot"></span>
         </div>
         <div>
-          <span class="dot"></span>
+          <span className="dot"></span>
         </div>
         <div>
-          <span class="dot"></span>
+          <span className="dot"></span>
         </div>
         <div>
-          <span class="dot"></span>
+          <span className="dot"></span>
         </div>
         <div>
-          <span class="dot"></span>
+          <span className="dot"></span>
         </div>
         <div>
-          <span class="dot"></span>
+          <span className="dot"></span>
         </div>
         <div>
-          <span class="dot"></span>
+          <span className="dot"></span>
         </div>
         <div>
-          <span class="dot"></span>
+          <span className="dot"></span>
         </div>
         <div>
-          <span class="dot"></span>
+          <span className="dot"></span>
         </div>
         <div>
-          <span class="dot"></span>
+          <span className="dot"></span>
         </div>
         <div>
-          <span class="dot"></span>
+          <span className="dot"></span>
         </div>
         <div>
-          <span class="dot"></span>
+          <span className="dot"></span>
         </div>
         <div>
-          <span class="dot"></span>
+          <span className="dot"></span>
         </div>
         <div>
-          <span class="dot"></span>
+          <span className="dot"></span>
         </div>
         <div>
-          <span class="dot"></span>
+          <span className="dot"></span>
         </div>
       </div>
     </div>
