@@ -35,6 +35,10 @@
   font-family: "Meriweather";
 }
 
+.about-btn {
+  width: 50%;
+}
+
 /* Animations */
 /* TODO: Change background waves to responsive (likely need a calc) */
 .waves {

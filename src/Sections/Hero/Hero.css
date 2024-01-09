@@ -37,3 +37,7 @@
   line-height: 27.6px;
   color: rgba(255, 255, 255, 0.75);
 }
+
+.hero-btn {
+  width: 30%;
+}

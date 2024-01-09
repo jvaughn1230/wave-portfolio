@@ -9,7 +9,7 @@ export const projects = [
     name: "Riptide",
     type: "A Bug Tracker",
     description:
-      "Built a Bug tracking application using React, NodeJS & MongoDB",
+      "Built a Bug tracking application using React, NodeJS & MongoDB. Implemented JWT for backend authorization.",
     cover: riptideCover,
     gallery: ["1", "2", "3"],
     stack: ["React", "CSS", "NodeJS", "MongoDB", "Redux/RTK"],
@@ -22,7 +22,7 @@ export const projects = [
     name: "DinoBeach Dev",
     type: "Starup Blog",
     description:
-      "Developed web page for DinoBeach Dev startup using React & Strapi",
+      "Developed web page for DinoBeach Dev startup using React & Strapi. Implemeneted Strapi as a headless CMS option for future clients. Originally built with Gatsby and TailWindCSS before being migrated to React and Regular CSS for better control.",
     cover: dinoBeachCover,
     gallery: ["1", "2", "3"],
     stack: ["React", "CSS", "Strapi"],
@@ -35,7 +35,7 @@ export const projects = [
     name: "Palm Leaf Clothing",
     type: "ECommerce Store",
     description:
-      "Built a full stack Ecommerce store using React, Redux, and Firebase",
+      "Built a full stack Ecommerce store using React, Redux, and Firebase. Implemented Stripe payment API. Originally implemneted legacy Redux before converting to RTK in order to be up to date with current standard.",
     cover: palmLeafCover,
     gallery: ["1", "2", "3"],
     stack: ["React", "CSS", "Firebase", "Redux/RTK"],
@@ -48,7 +48,7 @@ export const projects = [
     name: "SimpleScanner",
     type: "A Brouchere Site",
     description:
-      "Built the front end brouchure site for client using HTML, CSS, and JavaScript",
+      "Built the front end brouchure site for client using HTML, CSS, and JavaScript Website implemented snap scrolling & advanced CSS.",
     cover: SimpleScannerCover,
     gallery: ["1", "2", "3"],
     stack: ["HTML", "CSS", "JavaScript"],

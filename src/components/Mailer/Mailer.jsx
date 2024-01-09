@@ -74,7 +74,7 @@ const Mailer = () => {
           required
         />
 
-        <button type="submit" className="mailer-btn">
+        <button type="submit" className="btn mailer-btn">
           Send
         </button>
       </form>
