@@ -10,15 +10,41 @@
   align-items: center;
   justify-content: center;
   backdrop-filter: 30px;
+  z-index: 20;
 }
 
 .modal-container {
   background-color: pink;
   height: 90%;
   width: 90%;
+  position: relative;
 }
 
 .slider-container {
   width: 50%;
   margin: 0 auto;
+}
+
+.modal-content {
+  display: grid;
+  grid-template-columns: 30% 70%;
+  width: 80%;
+  margin-inline: auto;
+  margin-top: 1.5rem;
+}
+
+.modal-content p,
+.modal-content div {
+  font-size: var(--regular-text);
+  justify-self: flex-start;
+  text-align: start;
+}
+.project-links {
+  display: block;
+}
+
+.modal-exit {
+  position: absolute;
+  top: 2%;
+  left: 1%;
 }
