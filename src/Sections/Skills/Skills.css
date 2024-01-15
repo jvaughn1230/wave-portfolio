@@ -1,6 +1,14 @@
 .skills-container {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  row-gap: 30px;
+  padding-inline: 3rem;
+  align-items: stretch;
+}
+
+.skills-container:last-child {
+  justify-self: flex-start;
 }
 
 .skills-section {

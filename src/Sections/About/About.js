@@ -5,7 +5,7 @@ import Line from "../../components/Line/Line";
 
 const About = () => {
   const summary =
-    "Hi, I'm Jeffrey a full stack web developer based in Las Vegas NV. I build beautiful webistes using a combination of React, HTML, CSS, Javascript, Bootstrap with Node.js and Express.js on the backend. I love solving complex problems and learning new things! When I'm not programming, I can usually be found out in nature.";
+    "Hi, I'm Jeffrey a full stack developer based in Las Vegas NV. I love solving complex problems, and the love is what drove me into programming. I enjoy implementing complex CSS to create standout webpages, and I enjoy writing clean, efficient and scalable code. I cofounded DinoBeach Dev - a small web development startup focused on developing beautiful and fun websites. In my free time, I enjoy driving out to the mountains and enjoying some peace and quiet in nature.";
 
   return (
     <div id="about" className="about-section section">

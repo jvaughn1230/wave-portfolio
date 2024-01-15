@@ -3,23 +3,26 @@ import "./SkillCard.css";
 import { BsFiletypeJsx } from "react-icons/bs";
 import { useInView } from "react-intersection-observer";
 
-const SkillCard = (props) => {
+const SkillCard = ({ skill }) => {
   const { ref: cardViewRef, inView: cardVisible } = useInView({
     triggerOnce: true,
   });
+
+  // console.log("retrieved skill = " + skill);
+  console.log(skill.icon);
 
   return (
     <div
       className={`skill-card ${cardVisible ? "show-skill-card" : ""}`}
       ref={cardViewRef}
     >
-      <BsFiletypeJsx size={40} className="skill-icon" />
-      <h3>React Developer</h3>
-      <p>
-        React is my favorite programming language to build fast loading
-        websites. I have experience integrating various React libraries
-        inlcuindg React Router, Axios.
-      </p>
+      <div className="skillcard-content">
+        {/* <BsFiletypeJsx size={40} className="skill-icon" /> */}
+        {/* < {skill.icon} /> */}
+        {skill.icon}
+        <h3>{skill.name}</h3>
+        <p>{skill.summary}</p>
+      </div>
     </div>
   );
 };

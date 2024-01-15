@@ -1,38 +1,40 @@
 import { FaReact } from "react-icons/fa";
 import { IoLogoJavascript } from "react-icons/io5";
-import { FaCss3Alt } from "react-icons/fa";
-import { FaNodeJs } from "react-icons/fa6";
-import { DiMongodb } from "react-icons/di";
+import { FaDatabase } from "react-icons/fa";
+import { FaServer } from "react-icons/fa";
+import { IoIosColorPalette } from "react-icons/io";
 
 export const skills = [
-  { id: 1, name: "ReactJS", icon: FaReact, summary: "I Love React" },
+  {
+    id: 1,
+    name: "ReactJS",
+    icon: <FaReact size={40} />,
+    summary:
+      "React has become my go to for front end development due to it's speed and developing efficiency. I am experience in working with the essential tools in the React ecosystem including Redux and React-Router",
+  },
   {
     id: 2,
-    name: "JavaScript",
-    icon: IoLogoJavascript,
-    summary: "I Love JavaScript",
+    name: "Styling",
+    icon: <IoIosColorPalette size={40} />,
+    summary: "I am experiences in CSS, SCSS, and Tailwind CSS",
   },
-  { id: 3, name: "NodeJS", icon: FaNodeJs, summary: "I love node & Express" },
+  {
+    id: 3,
+    name: "Server Development",
+    icon: <FaServer size={40} />,
+    summary: "I write efficient and servers using NodeJS, ExpressJS, and JWT. ",
+  },
   {
     id: 4,
     name: "Database Development",
-    icon: DiMongodb,
-    summary: "I Love databases",
+    icon: <FaDatabase size={40} />,
+    summary:
+      "I have experience developing SQL and NoSQL databases including Firebase, MongoDB, and PostgreSQL",
   },
   {
     id: 5,
     name: "Styling",
-    icons: FaCss3Alt,
+    icon: <IoLogoJavascript size={40} />,
     summary: "Yay CSS",
   },
 ];
-
-// Skills
-//Styling ---> Tailwind CSS, CSS, SaSS
-//HTML/XML
-//React Ecosystem: React, React Router,
-//JavaScript
-//NodeJS/ExpressJS
-//DB: NoSQL & SQL, Firebase, PostgreSQL, MongoDB/Mongoose
-//APIs: Axios, Fetch, RTK Query
-//Redux
