@@ -1,8 +1,6 @@
 .project-card {
-  width: 33%;
-  position: absolute;
-  /* was position realtive */
-  margin-left: 35%;
+  width: 25%;
+  position: relative;
 }
 
 .main-image {
@@ -20,6 +18,19 @@
 }
 
 .show-project-card {
+  animation-duration: 0.5s;
+  animation-name: show-project-card;
+}
+
+@keyframes show-project-card {
+  0% {
+    opacity: 0;
+    transform: scale(0.5, 0.5);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1, 1);
+  }
 }
 
 /* .open-modal {
@@ -43,3 +54,15 @@
 
 /* .project-card:hover {
 } */
+
+@media (max-width: 900px) {
+  .project-card {
+    width: 50%;
+  }
+}
+
+@media (max-width: 600px) {
+  .project-card {
+    width: 100%;
+  }
+}

@@ -7,7 +7,7 @@ const ProjectCard = ({ project }) => {
   const [hovered, setHovered] = useState(false);
   const [openModal, setOpenModal] = useState(false);
 
-  const { ref: cardViewRef, inView: cardVisible } = useInView({
+  const { ref: projectViewRef, inView: projectVisible } = useInView({
     triggerOnce: true,
   });
 
@@ -20,10 +20,10 @@ const ProjectCard = ({ project }) => {
 
   return (
     <div
-      className={`project-card ${cardVisible ? "show-project-card" : ""}`}
+      className={`project-card ${projectVisible ? "show-project-card" : ""}`}
       onMouseEnter={() => setHovered(true)}
       onMouseLeave={() => setHovered(false)}
-      ref={cardViewRef}
+      ref={projectViewRef}
     >
       <img src={project.cover} alt="dinobeach" />
       <div className={`${hovered ? "portfolio-box" : "hide"}`}>
