@@ -1,6 +1,8 @@
 .project-card {
   width: 33%;
-  position: relative;
+  position: absolute;
+  /* was position realtive */
+  margin-left: 35%;
 }
 
 .main-image {
@@ -15,6 +17,9 @@
   top: 0;
   height: 100%;
   width: 100%;
+}
+
+.show-project-card {
 }
 
 /* .open-modal {
