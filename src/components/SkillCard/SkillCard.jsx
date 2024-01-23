@@ -8,9 +8,6 @@ const SkillCard = ({ skill }) => {
     triggerOnce: true,
   });
 
-  // console.log("retrieved skill = " + skill);
-  console.log(skill.icon);
-
   return (
     <div
       className={`skill-card ${cardVisible ? "show-skill-card" : ""}`}

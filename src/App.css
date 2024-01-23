@@ -38,3 +38,9 @@
   margin-inline: auto;
   /* align-self: center; */
 }
+
+@media (max-width: 900px) {
+  .section-header {
+    font-size: 32px;
+  }
+}

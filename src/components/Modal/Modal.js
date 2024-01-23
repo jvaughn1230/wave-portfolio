@@ -29,7 +29,7 @@ const Modal = ({ project, closeModal }) => {
           <div>{pillStack}</div>
           <h3>Description: </h3> <p>{project.description}</p>
           <h3>Links: </h3>
-          <div>
+          <div className="modal-links-container">
             <a className="image-link" href="github.com">
               <FaGithub size={30} />
             </a>

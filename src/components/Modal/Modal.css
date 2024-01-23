@@ -25,6 +25,12 @@
   margin: 0 auto;
 }
 
+.modal-links-container {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+}
+
 .modal-content {
   display: grid;
   grid-template-columns: 30% 70%;

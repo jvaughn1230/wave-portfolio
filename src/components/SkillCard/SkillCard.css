@@ -5,9 +5,8 @@
   transform: perspective(10em) rotateX(23deg);
   background-color: var(--primary);
   color: white;
-  /* height: 250px; */
+  min-height: 250px;
   border-radius: 30px;
-  flex-basis: 1;
 }
 
 .skillcard-content {

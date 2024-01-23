@@ -22,9 +22,9 @@ const About = () => {
           <h2 className="section-header about-header">About Me</h2>
           <Line color="white" />
           <p className="about-text">{summary}</p>
-          <button href="#skills" className="btn about-btn">
+          <a href="#skills" className="btn about-btn">
             Find Out More
-          </button>
+          </a>
         </div>
       </div>
     </div>
