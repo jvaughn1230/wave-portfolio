@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { GiHamburgerMenu } from "react-icons/gi";
-import Logo from "../../assets/Jeffrey Vaughn.png";
+import Logo from "../../assets/Untitled.png";
 import "./Navbar.css";
 
 const Navbar = () => {
