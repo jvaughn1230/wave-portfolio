@@ -7,6 +7,11 @@
   --white: rgb(248, 249, 250);
   --faded-white: rgba(13, 14, 15, 0.75);
 
+  /* New Palette */
+  --dark-blue: #363062;
+  --med-blue: #435585,
+  --light-blue: #818FB4,
+  --sand: #F5E8C7
   --hero-text: clamp(30px, 3.6458vw, 4rem);
   --section-header: clamp(10px, 2.0833vw, 3rem);
   --sub-header: clamp(24px, 1.5625vw, 2.5rem);

@@ -37,9 +37,7 @@ const Navbar = () => {
 
   return (
     <div className={`navbar ${scroll && "navbar-scrolled"}`}>
-      <div className="navbar-logo">
-        <img src={Logo} alt="logo" />
-      </div>
+      <div className="navbar-logo">{/* <img src={Logo} alt="logo" /> */}</div>
       <div className="navbar-links">
         {/* Desktop Links */}
         <div className="desktop-links-container">{sectionLinks}</div>
