@@ -8,7 +8,7 @@ const Projects = () => {
     <ProjectCard project={project} key={project.id} />
   ));
   return (
-    <div className="section" id="projects">
+    <div className="section projects" id="projects">
       <h2 className="section-header">Projects</h2>
       <div className="projects-container">{projectCards}</div>
     </div>

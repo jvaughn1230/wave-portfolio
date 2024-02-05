@@ -1,17 +1,12 @@
 :root {
-  --primary: #2a3050;
-  --secondary: #8aadd9;
+  /* Color Palette */
+  --dark-blue: #293050;
+  --light-blue: #435585;
 
-  /* rgb(21, 161, 169); */
-  --orange: rgb(221, 119, 93);
-  --white: rgb(248, 249, 250);
-  --faded-white: rgba(13, 14, 15, 0.75);
+  --custom-white: rgba(255, 255, 255, 0.75);
+  --sand-color: #dbb98c;
+  --orange-color: #d0614d;
 
-  /* New Palette */
-  --dark-blue: #363062;
-  --med-blue: #435585,
-  --light-blue: #818FB4,
-  --sand: #F5E8C7
   --hero-text: clamp(30px, 3.6458vw, 4rem);
   --section-header: clamp(10px, 2.0833vw, 3rem);
   --sub-header: clamp(24px, 1.5625vw, 2.5rem);
@@ -21,7 +16,7 @@
 
 * {
   box-sizing: border-box;
-  /* overflow-x: hidden; */
+  overflow-x: hidden;
 }
 
 html {
@@ -49,3 +44,19 @@ body {
 button:hover {
   opacity: 0.75;
 }
+
+/* Saved Colors */
+/* 
+rgb(21, 161, 169)
+#8aadd9
+#f5e8c7
+#e2eff8
+#2a9ad6
+#2f6db4
+#363062
+#020d21
+#def3f6
+#f3a69c
+#f6c8ae
+#e9b65c
+*/

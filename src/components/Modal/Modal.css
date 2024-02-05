@@ -14,7 +14,7 @@
 }
 
 .modal-container {
-  background-color: pink;
+  background-color: var(--sand-color);
   height: 90%;
   width: 90%;
   position: relative;

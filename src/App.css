@@ -7,6 +7,8 @@
 
 .App {
   text-align: center;
+  /* Need to change to default color to make wave work well */
+  background-color: var(--dark-blue);
 }
 
 .section {

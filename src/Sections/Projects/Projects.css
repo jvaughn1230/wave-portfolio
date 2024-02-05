@@ -6,3 +6,7 @@
   justify-content: center;
   row-gap: 0.75rem;
 }
+
+.projects {
+  background-color: var(--light-blue);
+}

@@ -1,5 +1,5 @@
 .about-section {
-  background-color: var(--primary);
+  background-color: var(--light-blue);
   position: relative;
 
   --mask: radial-gradient(
@@ -47,7 +47,7 @@
 }
 
 .about-btn {
-  background-color: orange;
+  background-color: var(--orange-color);
   color: white;
   margin-top: 3rem;
   width: 30%;
@@ -59,15 +59,17 @@
   overflow: hidden;
   width: 100vw;
   z-index: 3;
+  /* height: 2000px; */
   height: 200px;
   width: 1000%;
-  position: relative;
+  position: absolute;
   bottom: 325px;
   border: 2px solid white;
+  top: -120px;
 }
 
 .waves div {
-  background-color: #293050;
+  background-color: yellow;
   mask: radial-gradient(52.84px at 50% 73.5px, #000 99%, #0000 101%)
       calc(50% - 60px) 0/120px 100%,
     radial-gradient(52.84px at 50% -43.5px, #0000 99%, #000 101%) 50% 30px/120px

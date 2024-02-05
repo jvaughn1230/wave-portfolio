@@ -12,8 +12,12 @@
 }
 
 .skills-section {
-  background-color: var(--secondary);
+  background-color: var(--dark-blue);
   overflow: hidden;
+}
+
+.skills-section h2 {
+  color: var(--custom-white);
 }
 
 .fish {

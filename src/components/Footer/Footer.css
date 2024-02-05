@@ -1,7 +1,7 @@
 .footer {
   font-size: var(--regular-text);
-  color: rgb(108, 117, 125);
-  background-color: rgb(248, 249, 250);
+  color: white;
+  background-color: var(--sand-color);
   padding-block: 3rem;
 }
 

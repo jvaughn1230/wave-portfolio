@@ -29,8 +29,8 @@
 }
 
 .mailer-btn {
-  background-color: #03a89e;
-  color: white;
+  background-color: var(--orange-color);
+  color: var(--custom-white);
   width: 90%;
 }
 
