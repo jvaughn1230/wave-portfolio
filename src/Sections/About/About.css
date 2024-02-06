@@ -2,7 +2,7 @@
   background-color: var(--light-blue);
   position: relative;
 
-  --mask: radial-gradient(
+  --mask2: radial-gradient(
         223.61px at 50% calc(100% - 300px),
         #000 99%,
         #0000 101%
@@ -10,8 +10,8 @@
       calc(50% - 200px) 0/400px 100%,
     radial-gradient(223.61px at 50% calc(100% + 200px), #0000 99%, #000 101%)
       50% calc(100% - 100px) / 400px 100% repeat-x;
-  -webkit-mask: var(--mask);
-  mask: var(--mask);
+  -webkit-mask: var(--mask2);
+  mask: var(--mask2);
 }
 
 .about-header {
@@ -56,9 +56,9 @@
 /* Animations */
 /* TODO: Change background waves to responsive (likely need a calc) */
 .waves {
-  overflow: hidden;
+  /* overflow: hidden; */
   width: 100vw;
-  z-index: 3;
+  z-index: 20;
   /* height: 2000px; */
   height: 200px;
   width: 1000%;
@@ -70,12 +70,13 @@
 
 .waves div {
   background-color: yellow;
+  z-index: 20;
   mask: radial-gradient(52.84px at 50% 73.5px, #000 99%, #0000 101%)
       calc(50% - 60px) 0/120px 100%,
     radial-gradient(52.84px at 50% -43.5px, #0000 99%, #000 101%) 50% 30px/120px
       100% repeat-x;
 
-  overflow: hidden;
+  /* overflow: hidden; */
   position: absolute;
 }
 

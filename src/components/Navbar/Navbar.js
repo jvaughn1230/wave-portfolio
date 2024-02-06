@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import { GiHamburgerMenu } from "react-icons/gi";
-import Logo from "../../assets/Untitled.png";
 import "./Navbar.css";
 
 const Navbar = () => {
@@ -37,7 +36,7 @@ const Navbar = () => {
 
   return (
     <div className={`navbar ${scroll && "navbar-scrolled"}`}>
-      <div className="navbar-logo">{/* <img src={Logo} alt="logo" /> */}</div>
+      {/* <h1 className="navbar-logo">Jeffrey Vaughn</h1> */}
       <div className="navbar-links">
         {/* Desktop Links */}
         <div className="desktop-links-container">{sectionLinks}</div>

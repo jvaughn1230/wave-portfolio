@@ -11,13 +11,13 @@
 }
 
 .navbar-scrolled {
-  /* background-color: white; */
   background-color: var(--sand-color);
   color: black;
 }
 
 .navbar-logo {
-  font-size: 20px;
+  font-family: "Waterfall", cursive;
+  font-size: var(--hero-text);
 }
 
 .navbar-link {

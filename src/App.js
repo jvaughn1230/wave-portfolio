@@ -7,6 +7,9 @@ import Contact from "./Sections/Contact/Contact";
 import Projects from "./Sections/Projects/Projects";
 import Footer from "./components/Footer/Footer";
 
+// Temp
+import CurvedContainer from "./components/CurvedContainer/CurvedContainer";
+
 function App() {
   return (
     <div className="App">
@@ -15,6 +18,8 @@ function App() {
       <Skills />
       <Projects />
       <Contact />
+
+      <CurvedContainer />
 
       <Footer />
     </div>
