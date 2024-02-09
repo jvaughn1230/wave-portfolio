@@ -1,0 +1,21 @@
+.curved-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--dark-blue);
+  min-height: 100vh;
+  width: 100vw;
+  background-color: aqua;
+
+  /* Curve */
+  --curve: radial-gradient(
+        223.61px at 50% calc(100% - 300px),
+        #000 99%,
+        #0000 101%
+      )
+      calc(50% - 200px) 0/400px 100%,
+    radial-gradient(223.61px at 50% calc(100% + 200px), #0000 99%, #000 101%)
+      50% calc(100% - 100px) / 400px 100% repeat-x;
+  -webkit-mask: var(--curve);
+  mask: var(--curve);
+}

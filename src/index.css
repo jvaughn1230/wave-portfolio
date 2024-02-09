@@ -14,7 +14,9 @@
   --small-text: clamp(10px, 0.9115vw, 1.5rem);
 }
 
-* {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
   overflow-x: hidden;
 }

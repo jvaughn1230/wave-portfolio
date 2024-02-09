@@ -10,16 +10,30 @@ import Footer from "./components/Footer/Footer";
 // Temp
 import CurvedContainer from "./components/CurvedContainer/CurvedContainer";
 
+/* 
+TODO:
+  Curved Containers
+TODO:  
+  Waved Containers: 
+
+*/
+
 function App() {
   return (
     <div className="App">
       <Hero />
+      {/* Top Wave, bottom Curve */}
       <About />
       <Skills />
+      {/* Skills -> Curved */}
+
       <Projects />
+      {/* Top Wave */}
       <Contact />
 
-      <CurvedContainer />
+      <CurvedContainer type="curve">
+        <Skills />
+      </CurvedContainer>
 
       <Footer />
     </div>

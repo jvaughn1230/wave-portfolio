@@ -1,9 +1,13 @@
 .hero-section {
+  /* height: 80vh; */
   height: 100vh;
-  background-color: var(--dark-blue);
+  width: 100%;
+  /* background-color: var(--dark-blue); */
+  background-color: var(--light-blue);
   display: flex;
   color: var(--custom-white);
 }
+
 .hero-text {
   /* margin-top: 45vh; */
   margin-inline: auto;

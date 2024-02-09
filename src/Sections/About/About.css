@@ -2,6 +2,7 @@
   background-color: var(--light-blue);
   position: relative;
 
+  /* Curve */
   --mask2: radial-gradient(
         223.61px at 50% calc(100% - 300px),
         #000 99%,
