@@ -12,8 +12,9 @@
 }
 
 .skills-section {
-  background-color: var(--dark-blue);
+  /* background-color: var(--dark-blue); */
   overflow: hidden;
+  background-color: var(--light-blue);
 }
 
 .skills-section h2 {

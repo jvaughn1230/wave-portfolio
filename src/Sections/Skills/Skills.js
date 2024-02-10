@@ -1,5 +1,6 @@
 import React from "react";
 import "./Skills.css";
+import WaveContainer from "../../components/WaveContainer/WaveContainer";
 
 import { skills } from "../../data/skills";
 
@@ -13,10 +14,12 @@ const Skills = () => {
   ));
 
   return (
-    <div id="skills" className="section skills-section">
-      <h2 className="section-header">Skills</h2>
-      <div className="skills-container">{skillsList}</div>
-    </div>
+    <WaveContainer>
+      <div id="skills" className="section skills-section">
+        <h2 className="section-header">Skills</h2>
+        <div className="skills-container">{skillsList}</div>
+      </div>
+    </WaveContainer>
   );
 };
 

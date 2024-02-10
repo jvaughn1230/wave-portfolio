@@ -5,37 +5,18 @@ import About from "./Sections/About/About";
 import Skills from "./Sections/Skills/Skills";
 import Contact from "./Sections/Contact/Contact";
 import Projects from "./Sections/Projects/Projects";
-import Footer from "./components/Footer/Footer";
-
-// Temp
-import CurvedContainer from "./components/CurvedContainer/CurvedContainer";
-
-/* 
-TODO:
-  Curved Containers
-TODO:  
-  Waved Containers: 
-
-*/
+import Layout from "./components/Layout";
 
 function App() {
   return (
     <div className="App">
-      <Hero />
-      {/* Top Wave, bottom Curve */}
-      <About />
-      <Skills />
-      {/* Skills -> Curved */}
-
-      <Projects />
-      {/* Top Wave */}
-      <Contact />
-
-      <CurvedContainer type="curve">
+      <Layout>
+        <Hero />
+        <About />
         <Skills />
-      </CurvedContainer>
-
-      <Footer />
+        <Projects />
+        <Contact />
+      </Layout>
     </div>
   );
 }

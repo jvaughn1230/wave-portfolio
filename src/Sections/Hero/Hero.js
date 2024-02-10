@@ -1,14 +1,12 @@
 import React from "react";
 import "./Hero.css";
-import Navbar from "../../components/Navbar/Navbar";
 import Line from "../../components/Line/Line";
-import CurvedContainer from "../../components/CurvedContainer/CurvedContainer";
+import WaveContainer from "../../components/WaveContainer/WaveContainer";
 
 const Hero = () => {
   return (
-    <CurvedContainer>
+    <WaveContainer>
       <div className="hero-section">
-        <Navbar />
         <div className="hero-text">
           <div className="hero-header"> Hello, I'm Jeffrey Vaughn! </div>
           <Line color="blue" />
@@ -69,7 +67,7 @@ const Hero = () => {
           </div>
         </div>
       </div>
-    </CurvedContainer>
+    </WaveContainer>
   );
 };
 

@@ -1,10 +1,3 @@
-/* :root {
-  --mask: radial-gradient(52.84px at 50% 73.5px, #000 99%, #0000 101%)
-      calc(50% - 60px) 0/120px 100%,
-    radial-gradient(52.84px at 50% -43.5px, #0000 99%, #000 101%) 50% 30px/120px
-      100% repeat-x;
-} */
-
 .App {
   text-align: center;
   /* Need to change to default color to make wave work well */

@@ -1,6 +1,7 @@
 .about-section {
-  background-color: var(--light-blue);
+  background-color: var(--dark-blue);
   position: relative;
+  min-height: 100vh;
 
   /* Curve */
   --mask2: radial-gradient(
@@ -13,10 +14,7 @@
       50% calc(100% - 100px) / 400px 100% repeat-x;
   -webkit-mask: var(--mask2);
   mask: var(--mask2);
-}
-
-.about-header {
-  color: var(--white);
+  color: var(--custom-white);
 }
 
 .about-container {
@@ -56,11 +54,9 @@
 
 /* Animations */
 /* TODO: Change background waves to responsive (likely need a calc) */
-.waves {
-  /* overflow: hidden; */
+/* .waves {
   width: 100vw;
   z-index: 20;
-  /* height: 2000px; */
   height: 200px;
   width: 1000%;
   position: absolute;
@@ -77,7 +73,6 @@
     radial-gradient(52.84px at 50% -43.5px, #0000 99%, #000 101%) 50% 30px/120px
       100% repeat-x;
 
-  /* overflow: hidden; */
   position: absolute;
 }
 
@@ -109,8 +104,8 @@
   }
   100% {
     transform: translateX(0px);
-  }
-}
+  } */
+/* } */
 
 @media (max-width: 900px) {
   .about-container {
