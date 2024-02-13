@@ -4,7 +4,7 @@
   min-height: 100vh;
 
   /* Curve */
-  --mask2: radial-gradient(
+  /* --mask2: radial-gradient(
         223.61px at 50% calc(100% - 300px),
         #000 99%,
         #0000 101%
@@ -14,7 +14,7 @@
       50% calc(100% - 100px) / 400px 100% repeat-x;
   -webkit-mask: var(--mask2);
   mask: var(--mask2);
-  color: var(--custom-white);
+  color: var(--custom-white);*/
 }
 
 .about-container {
@@ -51,61 +51,6 @@
   margin-top: 3rem;
   width: 30%;
 }
-
-/* Animations */
-/* TODO: Change background waves to responsive (likely need a calc) */
-/* .waves {
-  width: 100vw;
-  z-index: 20;
-  height: 200px;
-  width: 1000%;
-  position: absolute;
-  bottom: 325px;
-  border: 2px solid white;
-  top: -120px;
-}
-
-.waves div {
-  background-color: yellow;
-  z-index: 20;
-  mask: radial-gradient(52.84px at 50% 73.5px, #000 99%, #0000 101%)
-      calc(50% - 60px) 0/120px 100%,
-    radial-gradient(52.84px at 50% -43.5px, #0000 99%, #000 101%) 50% 30px/120px
-      100% repeat-x;
-
-  position: absolute;
-}
-
-.waves div:nth-child(1) {
-  height: 100px;
-  width: 6000px;
-  bottom: 0;
-
-  animation: move-wave 60s infinite linear;
-}
-
-.waves div:nth-child(2) {
-  height: 100px;
-  width: 200%;
-  opacity: 0.5;
-  bottom: 10px;
-}
-.waves div:nth-child(3) {
-  right: 8px;
-  height: 100px;
-  width: 200%;
-  opacity: 0.5;
-  bottom: 10px;
-}
-
-@keyframes move-wave {
-  50% {
-    transform: translateX(-3000px);
-  }
-  100% {
-    transform: translateX(0px);
-  } */
-/* } */
 
 @media (max-width: 900px) {
   .about-container {
