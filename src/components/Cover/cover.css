@@ -1,0 +1,33 @@
+.cover {
+  height: 150vh;
+  width: 200vw;
+  z-index: 2;
+  background-color: var(--dark-blue);
+  position: absolute;
+  --mask6: radial-gradient(223.61px at 50% 300px, #000 99%, #0000 101%)
+      calc(50% - 200px) 0/400px 100%,
+    radial-gradient(223.61px at 50% -200px, #0000 99%, #000 101%) 50% 100px /
+      400px 100% repeat-x;
+
+  -webkit-mask: var(--mask6);
+  mask: var(--mask6);
+  border: 2px solid white;
+  right: -175px;
+
+  top: 70vh;
+}
+
+.cover-container {
+  background-color: transparent;
+}
+
+.remove-cover {
+  animation: remove-cover 8s ease forwards 0.25s;
+  animation-delay: 0.75s;
+}
+
+@keyframes remove-cover {
+  100% {
+    transform: translateY(2000%);
+  }
+}

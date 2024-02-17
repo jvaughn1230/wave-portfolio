@@ -33,6 +33,11 @@
   /* align-self: center; */
 }
 
+.cover-wrapper {
+  position: relative;
+  overflow: hidden;
+}
+
 @media (max-width: 900px) {
   .section-header {
     font-size: 32px;
