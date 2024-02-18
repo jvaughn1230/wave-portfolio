@@ -9,3 +9,85 @@
 .contact-section h2 {
   color: var(--custom-white);
 }
+
+.contact-fish {
+  width: 50px;
+  height: auto;
+  position: absolute;
+  color: #ffad2e;
+  animation: hover-fish 1s infinite;
+}
+
+.contact-fish:nth-child(1) {
+  left: 10%;
+  top: 12%;
+}
+
+.contact-fish:nth-child(2) {
+  left: 5%;
+  top: 10%;
+}
+
+.contact-fish:nth-child(3) {
+  left: 5%;
+}
+
+@keyframes hover-fish {
+  50% {
+    transition: translateY(10vh);
+  }
+  100% {
+    transition: translateY(30vh);
+  }
+}
+
+/* For Later */
+/*
+@keyframes move-fish1 {
+  0% {
+    left: 10%;
+  }
+  50% {
+    left: 20%;
+    top: 30%;
+
+    transform: 90deg scaleX(-1);
+    rotate: scaleX(-1);
+  }
+  75% {
+    top: 30%;
+    left: 15%;
+  }
+  100% {
+    left: 10%;
+  }
+}
+
+@keyframes move-fish2 {
+  0% {
+    left: 5%;
+  }
+  50% {
+    left: 22%;
+    top: 15%;
+  }
+  100% {
+    left: 5%;
+    transform: scaleX(-1);
+  }
+}
+
+@keyframes move-fish3 {
+  0% {
+    left: 5%;
+  }
+  50% {
+    left: 22%;
+    top: 15%;
+  }
+  100% {
+    left: 5%;
+    transform: scaleX(-1);
+  }
+}
+*/
