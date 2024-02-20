@@ -1,15 +1,12 @@
 .hero-section {
-  /* height: 80vh; */
   height: 100vh;
   width: 100%;
-  /* background-color: var(--dark-blue); */
   background-color: var(--light-blue);
   display: flex;
   color: var(--custom-white);
 }
 
 .hero-text {
-  /* margin-top: 45vh; */
   margin-inline: auto;
   width: 66%;
   display: flex;
@@ -36,6 +33,13 @@
   background-color: var(--orange-color);
   color: var(--custom-white);
   margin-top: 3rem;
+}
+
+/* Breakpoints */
+@media (max-width: 350px) {
+  .hero-text {
+    width: 90%;
+  }
 }
 
 /* Bubbles */

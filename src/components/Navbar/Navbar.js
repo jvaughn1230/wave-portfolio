@@ -36,17 +36,21 @@ const Navbar = () => {
 
   return (
     <div className={`navbar ${scroll && "navbar-scrolled"}`}>
-      {/* <h1 className="navbar-logo">Jeffrey Vaughn</h1> */}
-      <div className="navbar-links">
-        {/* Desktop Links */}
-        <div className="desktop-links-container">{sectionLinks}</div>
+      <h1 className="navbar-logo">Jeffrey Vaughn</h1>
 
-        {/* Mobile Menu */}
-        <div className="mobile-menu">
-          <GiHamburgerMenu onClick={() => handleMenuToggle()} size={60} />
-          <div className={`${openNav ? "mobile-links-container" : "hide"}`}>
-            {sectionLinks}
-          </div>
+      {/* Nav Links */}
+      <div className="navbar-links">
+        {/* Hamburger on Mobile */}
+        <GiHamburgerMenu
+          onClick={() => handleMenuToggle()}
+          size={60}
+          className="hamburger-menu"
+        />
+        {/* Links Container */}
+        <div
+          className={`${openNav ? "show-nav" : "hide-nav"} links-container `}
+        >
+          {sectionLinks}
         </div>
       </div>
     </div>
@@ -54,3 +58,12 @@ const Navbar = () => {
 };
 
 export default Navbar;
+
+{
+  /* <div className="mobile-menu">
+          <GiHamburgerMenu onClick={() => handleMenuToggle()} size={60} />
+          <div className={`${openNav ? "mobile-links-container" : "hide"}`}>
+            {sectionLinks}
+          </div>
+        </div> */
+}

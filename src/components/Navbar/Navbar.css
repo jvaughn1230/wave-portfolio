@@ -8,6 +8,7 @@
   justify-content: space-between;
   z-index: 5;
   color: var(--custom-white);
+  overflow: visible;
 }
 
 .navbar-scrolled {
@@ -16,12 +17,25 @@
 }
 
 .navbar-logo {
-  font-family: "Waterfall", cursive;
-  font-size: var(--hero-text);
+  /* font-family: "Waterfall", cursive; */
+  font-size: var(--sub-header);
+  padding: 0;
+}
+
+/* Links */
+
+.links-container {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-self: flex-end;
+}
+
+.hamburger-menu {
+  display: none;
 }
 
 .navbar-link {
-  height: 100%;
   display: inline-block;
   position: relative;
 }
@@ -35,18 +49,12 @@
   line-height: 21.6px;
 }
 
-.desktop-links-container {
-  width: 100%;
-  display: flex;
-  justify-content: space-around;
-}
-
 .navbar-links-scrolled {
   color: black;
 }
 
-.mobile-menu {
-  display: none;
+.hide-nav {
+  display: flex;
 }
 
 /* Desktop Underline Animation */
@@ -72,51 +80,44 @@
 
 @media (max-width: 900px) {
   .navbar {
-    background-color: var(--primary);
     padding-top: 1rem;
     padding-bottom: 0.25rem;
-    padding-inline: 2.5%;
+    padding-inline: 0;
   }
 
-  .mobile-menu {
-    display: block;
+  .hamburger-menu {
+    display: inline;
     width: 100%;
-    text-align: end;
-    padding-right: 0.75rem;
   }
 
-  .navbar-logo,
-  .mobile-menu {
-    align-self: self-end;
-    padding-bottom: 0.25rem;
+  .navbar-logo {
+    margin-left: 0.75rem;
   }
 
-  .desktop-links-container {
+  .links-container {
     display: none;
-  }
-
-  .mobile-links-container {
-    display: flex;
     flex-direction: column;
-    gap: 0.5rem;
-    justify-content: center;
-    width: 100%;
-    z-index: 5;
-
     position: absolute;
     left: 0;
+    width: 100vw;
     text-align: center;
-    background-color: var(--orange-color);
-    padding-top: 0.5rem;
+    top: 80px;
+    background-color: var(--sand-color);
+    gap: 0.5rem;
+  }
+
+  .show-nav {
+    display: block;
   }
 
   .navbar-link {
     line-height: 48px;
     font-size: 28px;
     padding-top: 1rem;
+    display: block;
   }
 
-  .mobile-links-container:last-child {
+  .links-container:last-child {
     padding-bottom: 0.5rem;
   }
 }
