@@ -1,10 +1,13 @@
 import React from "react";
 import ProjectCard from "../../components/ProjectCard/ProjectCard";
 import "./Projects.css";
-import { projects } from "../../data/projects";
 import CurvedContainer from "../../components/CurvedContainer/CurvedContainer";
+import { useProject } from "../../context/ProjectContext";
 
-const Projects = () => {
+const Projects = ({ setSelectedProject }) => {
+  const { projects } = useProject();
+  console.log("Project Section: ", projects);
+
   const projectCards = projects.map((project) => (
     <ProjectCard project={project} key={project.id} />
   ));

@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import { useInView } from "react-intersection-observer";
 import "./ProjectCard.css";
-import Modal from "../Modal/Modal";
 
 const ProjectCard = ({ project }) => {
   const [hovered, setHovered] = useState(false);
@@ -12,7 +11,6 @@ const ProjectCard = ({ project }) => {
   });
 
   const closeModal = () => setOpenModal(false);
-  console.log(project.name + " " + openModal);
   const handleClick = () => {
     setOpenModal(true);
     setHovered(false);
@@ -32,9 +30,7 @@ const ProjectCard = ({ project }) => {
         <button onClick={handleClick}>Read More</button>
       </div>
       <div></div>
-      <div>
-        {openModal && <Modal project={project} closeModal={closeModal} />}
-      </div>
+      <div></div>
     </div>
   );
 };

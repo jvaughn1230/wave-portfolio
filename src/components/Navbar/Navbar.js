@@ -58,12 +58,3 @@ const Navbar = () => {
 };
 
 export default Navbar;
-
-{
-  /* <div className="mobile-menu">
-          <GiHamburgerMenu onClick={() => handleMenuToggle()} size={60} />
-          <div className={`${openNav ? "mobile-links-container" : "hide"}`}>
-            {sectionLinks}
-          </div>
-        </div> */
-}

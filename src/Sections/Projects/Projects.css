@@ -5,6 +5,7 @@
   flex-wrap: wrap;
   justify-content: center;
   row-gap: 0.75rem;
+  overflow: visible;
 }
 
 .projects {

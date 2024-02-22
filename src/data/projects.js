@@ -3,7 +3,7 @@ import palmLeafCover from "../assets/palmclothing.png";
 import riptideCover from "../assets/riptide.png";
 import SimpleScannerCover from "../assets/simplescanner.png";
 
-export const projects = [
+export const projectsData = [
   {
     id: 1,
     name: "Riptide",
