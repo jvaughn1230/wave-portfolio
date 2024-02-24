@@ -6,10 +6,16 @@ import { FaGithub } from "react-icons/fa";
 import { FiExternalLink } from "react-icons/fi";
 import { IoMdClose } from "react-icons/io";
 
-const Modal = ({ project, closeModal }) => {
+import { useProject } from "../../context/ProjectContext";
+
+const Modal = ({ project }) => {
   const openInNewTab = (url) => {
     window.open(url, "_blank", "noreferrer");
   };
+
+  const {setSelectedProject} = useProject();
+
+  const closeModal = () => setSelectedProject(null)
 
   const stack = project.stack;
 

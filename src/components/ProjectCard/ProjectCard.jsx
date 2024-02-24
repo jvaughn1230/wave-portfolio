@@ -1,18 +1,21 @@
 import React, { useState } from "react";
 import { useInView } from "react-intersection-observer";
 import "./ProjectCard.css";
+import {useProject} from "../../context/ProjectContext"
 
 const ProjectCard = ({ project }) => {
   const [hovered, setHovered] = useState(false);
-  const [openModal, setOpenModal] = useState(false);
+  // const [openModal, setOpenModal] = useState(false);
+  const {setSelectedProject} = useProject();
+
 
   const { ref: projectViewRef, inView: projectVisible } = useInView({
     triggerOnce: true,
   });
 
-  const closeModal = () => setOpenModal(false);
+  // const closeModal = () => setOpenModal(false);
   const handleClick = () => {
-    setOpenModal(true);
+    setSelectedProject(project);
     setHovered(false);
   };
 

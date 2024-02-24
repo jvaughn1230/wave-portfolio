@@ -8,9 +8,11 @@ const Projects = ({ setSelectedProject }) => {
   const { projects } = useProject();
   console.log("Project Section: ", projects);
 
+  // Mapping Projects
   const projectCards = projects.map((project) => (
     <ProjectCard project={project} key={project.id} />
   ));
+
   return (
     <CurvedContainer>
       <div className="section projects" id="projects">
