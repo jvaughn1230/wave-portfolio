@@ -1,6 +1,5 @@
 import React from "react";
 import "./SkillCard.css";
-import { BsFiletypeJsx } from "react-icons/bs";
 import { useInView } from "react-intersection-observer";
 
 const SkillCard = ({ skill }) => {
@@ -14,8 +13,6 @@ const SkillCard = ({ skill }) => {
       ref={cardViewRef}
     >
       <div className="skillcard-content">
-        {/* <BsFiletypeJsx size={40} className="skill-icon" /> */}
-        {/* < {skill.icon} /> */}
         {skill.icon}
         <h3>{skill.name}</h3>
         <p>{skill.summary}</p>

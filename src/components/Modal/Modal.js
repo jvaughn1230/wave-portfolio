@@ -9,13 +9,13 @@ import { IoMdClose } from "react-icons/io";
 import { useProject } from "../../context/ProjectContext";
 
 const Modal = ({ project }) => {
-  const openInNewTab = (url) => {
-    window.open(url, "_blank", "noreferrer");
-  };
+  // const openInNewTab = (url) => {
+  //   window.open(url, "_blank", "noreferrer");
+  // };
 
-  const {setSelectedProject} = useProject();
+  const { setSelectedProject } = useProject();
 
-  const closeModal = () => setSelectedProject(null)
+  const closeModal = () => setSelectedProject(null);
 
   const stack = project.stack;
 

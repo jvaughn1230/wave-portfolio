@@ -19,8 +19,7 @@
 
 .slider-btn {
   all: unset;
-  /* display: inline; */
-  display: block;
+  display: inline;
   position: absolute;
   top: 0;
   padding-inline: 1rem;
@@ -46,6 +45,7 @@
   bottom: 0.5rem;
   left: 50%;
   translate: -50%;
+  overflow: visible;
 }
 
 .slider-dot-btn {
@@ -55,6 +55,8 @@
   width: 100%;
   transition: scale 100ms ease-in-out;
 }
+
+
 
 .slider-dot-btn:hover {
   scale: 1.2;

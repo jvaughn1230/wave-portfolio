@@ -46,7 +46,6 @@
   justify-content: space-around;
   font-weight: 700;
   font-size: var(--regular-text);
-  line-height: 21.6px;
 }
 
 .navbar-links-scrolled {
@@ -111,7 +110,7 @@
   }
 
   .navbar-link {
-    line-height: 48px;
+    /* line-height: 48px; */
     font-size: 28px;
     padding-top: 1rem;
     display: block;

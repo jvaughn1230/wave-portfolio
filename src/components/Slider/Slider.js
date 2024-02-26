@@ -1,21 +1,20 @@
 import React, { useState } from "react";
 import "./Slider.css";
 
+import { useProject } from "../../context/ProjectContext";
+
 import { MdOutlineArrowBackIos } from "react-icons/md";
 import { MdOutlineArrowForwardIos } from "react-icons/md";
 import { FaRegDotCircle } from "react-icons/fa";
 import { FaRegCircle } from "react-icons/fa";
 
-import Image1 from "../../assets/dinobeach.png";
-import Image2 from "../../assets/simplescanner.png";
-import Image3 from "../../assets/riptide.png";
-import Image4 from "../../assets/palmclothing.png";
-
-// TODO: Add IMage Prop
 const Slider = () => {
   const [imageIndex, setImageIndex] = useState(0);
 
-  const imageUrls = [Image1, Image2, Image3, Image4];
+  const { selectedProject } = useProject();
+  console.log(selectedProject);
+
+  const imageUrls = selectedProject.gallery;
 
   const showNextImg = () => {
     setImageIndex((index) => {

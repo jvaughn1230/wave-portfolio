@@ -22,6 +22,10 @@
   padding-inline: 1.5em;
 }
 
+.about-img {
+  width: 75%;
+}
+
 .about-text {
   font-size: var(--regular-text);
   color: var(--faded-white);
@@ -34,6 +38,10 @@
 .about-btn {
   background-color: var(--orange-color);
   color: white;
+}
+
+.about-header {
+  margin-bottom: 0.25rem;
 }
 
 @media (max-width: 900px) {

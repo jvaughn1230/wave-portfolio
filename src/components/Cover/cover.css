@@ -29,3 +29,18 @@
     transform: translateY(2000%);
   }
 }
+
+/* Todo: Need to change top position based on project card height for better results */
+@media (max-width: 900px) {
+  .cover {
+    top: 86vh;
+    background-color: yellow;
+  }
+}
+
+@media (max-width: 600px) {
+  .cover {
+    top: 175vh;
+    width: 300vw;
+  }
+}

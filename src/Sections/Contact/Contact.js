@@ -1,7 +1,7 @@
 import React from "react";
 import Mailer from "../../components/Mailer/Mailer";
 import "./Contact.css";
-import { GiTropicalFish } from "react-icons/gi";
+// import { GiTropicalFish } from "react-icons/gi";
 
 const Contact = () => {
   return (

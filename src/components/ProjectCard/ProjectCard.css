@@ -1,6 +1,7 @@
 .project-card {
   width: 25%;
   position: relative;
+  overflow: hidden;
 }
 
 .main-image {
@@ -9,7 +10,7 @@
 }
 
 .portfolio-box {
-  background-color: rgba(22, 208, 255, 0.9);
+  background-color: var(--sand-color);
   position: absolute;
   top: 0;
   height: 100%;
@@ -19,6 +20,17 @@
 .show-project-card {
   animation-duration: 0.5s;
   animation-name: show-project-card;
+}
+
+.project-card-img {
+  height: 100%;
+  overflow: hidden;
+}
+
+.project-btn {
+  background-color: var(--orange-color);
+  color: white;
+  padding: 0.75em;
 }
 
 @keyframes show-project-card {
