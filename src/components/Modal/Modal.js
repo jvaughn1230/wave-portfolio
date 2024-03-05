@@ -1,6 +1,7 @@
 import React from "react";
 import "./Modal.css";
-import Slider from "../Slider/Slider";
+// import Slider from "../Slider/Slider";
+import ImageSlider from "../ImageSlider/ImageSlider";
 import Pill from "../Pill/Pill";
 import { FaGithub } from "react-icons/fa";
 import { FiExternalLink } from "react-icons/fi";
@@ -27,8 +28,8 @@ const Modal = ({ project }) => {
     <div className="modal-bg">
       <div className="modal-container">
         <h2>{project.name}</h2>
-        <div className="slider-container">
-          <Slider />
+        <div className="modal-slider-container">
+          <ImageSlider />
         </div>
         <div className="modal-content">
           <h3>Stack: </h3>

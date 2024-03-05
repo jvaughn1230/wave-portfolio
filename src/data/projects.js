@@ -40,7 +40,7 @@ export const projectsData = [
       "Developed web page for DinoBeach Dev startup using React & Strapi. Implemeneted Strapi as a headless CMS option for future clients. Originally built with Gatsby and TailWindCSS before being migrated to React and Regular CSS for better control.",
     cover: dinobeachImageList[0],
     gallery: dinobeachImageList,
-    stack: ["React", "CSS", "Strapi"],
+    stack: ["React", "CSS", "Strapi", "Axios"],
     website: "https://dinobeachdev.netlify.app",
     frontEnd: "https://github.com/jvaughn1230/dinobeachdev",
   },

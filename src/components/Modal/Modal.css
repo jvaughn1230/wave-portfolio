@@ -19,8 +19,10 @@
   position: relative;
 }
 
-.slider-container {
-  width: 75%;
+.modal-slider-container {
+  width: 800px;
+  max-width: 80%;
+  height: auto;
   margin: 0 auto;
 }
 
