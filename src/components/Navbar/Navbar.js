@@ -36,7 +36,9 @@ const Navbar = () => {
 
   return (
     <div className={`navbar ${scroll && "navbar-scrolled"}`}>
-      <h1 className="navbar-logo">Jeffrey Vaughn</h1>
+      <h1 className="navbar-logo">
+        <a href="#main">Jeffrey Vaughn</a>
+      </h1>
 
       {/* Nav Links */}
       <div className="navbar-links">

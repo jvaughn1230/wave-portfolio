@@ -1,10 +1,9 @@
 .skills-container {
+  align-items: stretch;
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
   padding-inline: 5rem;
-  /* padding-inline: 3rem; */
-  align-items: stretch;
 }
 
 .skills-container .skill-card {
@@ -12,20 +11,20 @@
 }
 
 .skills-section {
-  /* background-color: var(--dark-blue); */
-  overflow: hidden;
   background-color: var(--light-blue);
+  overflow: hidden;
 }
 
 .skills-section h2 {
   color: var(--custom-white);
 }
 
-.fish {
+/* For Later Use */
+/* .fish {
   color: white;
   width: 1.5vw;
   height: auto;
   position: absolute;
   z-index: 3;
   top: 5%;
-}
+} */

@@ -1,14 +1,14 @@
 .navbar {
+  color: var(--custom-white);
   display: flex;
-  padding-top: 2rem;
+  justify-content: space-between;
+  overflow: visible;
   padding-bottom: 1rem;
   padding-inline: 3.125rem;
-  width: 100vw;
+  padding-top: 2rem;
   position: fixed;
-  justify-content: space-between;
+  width: 100vw;
   z-index: 5;
-  color: var(--custom-white);
-  overflow: visible;
 }
 
 .navbar-scrolled {
@@ -17,18 +17,18 @@
 }
 
 .navbar-logo {
-  /* font-family: "Waterfall", cursive; */
   font-size: var(--sub-header);
   padding: 0;
+  margin-bottom: 0;
 }
 
 /* Links */
 
 .links-container {
-  width: 100%;
+  align-self: flex-end;
   display: flex;
   justify-content: space-around;
-  align-self: flex-end;
+  width: 100%;
 }
 
 .hamburger-menu {
@@ -41,11 +41,11 @@
 }
 
 .navbar-links {
-  width: 30%;
   display: flex;
-  justify-content: space-around;
-  font-weight: 700;
   font-size: var(--regular-text);
+  font-weight: 700;
+  justify-content: space-around;
+  width: 30%;
 }
 
 .navbar-links-scrolled {
@@ -59,16 +59,16 @@
 /* Desktop Underline Animation */
 @media (min-width: 900px) {
   .navbar-link::after {
-    content: "";
-    position: absolute;
-    width: 100%;
-    transform: scaleX(0);
-    height: 2px;
-    bottom: 0;
-    left: 0;
     background-color: #0087ca;
+    bottom: 0;
+    content: "";
+    height: 2px;
+    left: 0;
+    position: absolute;
+    transform: scaleX(0);
     transform-origin: bottom right;
     transition: transform 0.25s ease-out;
+    width: 100%;
   }
 
   .navbar-link:hover::after {
@@ -79,9 +79,9 @@
 
 @media (max-width: 900px) {
   .navbar {
-    padding-top: 1rem;
     padding-bottom: 0.25rem;
     padding-inline: 0;
+    padding-top: 1rem;
   }
 
   .hamburger-menu {
@@ -94,15 +94,15 @@
   }
 
   .links-container {
+    background-color: var(--sand-color);
     display: none;
     flex-direction: column;
-    position: absolute;
+    gap: 0.5rem;
     left: 0;
-    width: 100vw;
+    position: absolute;
     text-align: center;
     top: 80px;
-    background-color: var(--sand-color);
-    gap: 0.5rem;
+    width: 100vw;
   }
 
   .show-nav {
@@ -110,13 +110,12 @@
   }
 
   .navbar-link {
-    /* line-height: 48px; */
-    font-size: 28px;
-    padding-top: 1rem;
+    box-shadow: 0px 0.25px rgba(0, 0, 0, 0.2);
+    color: black;
     display: block;
-  }
-
-  .links-container:last-child {
-    padding-bottom: 0.5rem;
+    font-size: 28px;
+    line-height: 36px;
+    padding-bottom: 1rem;
+    padding-top: 1rem;
   }
 }

@@ -13,6 +13,7 @@ const Mailer = () => {
   const [status, setStatus] = useState("");
 
   const form = useRef();
+
   const handleSubmit = (e) => {
     e.preventDefault();
 
@@ -43,8 +44,6 @@ const Mailer = () => {
       [e.target.name]: e.target.value,
     }));
   };
-
-  //   TODo: Add onBlur Error check
 
   return (
     <div className="mailer-container">
@@ -82,6 +81,7 @@ const Mailer = () => {
   );
 };
 
+// Alert
 const alert = () => {
   return (
     <div>

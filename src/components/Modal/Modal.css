@@ -1,43 +1,37 @@
 .modal-bg {
-  position: fixed;
+  align-items: center;
+  backdrop-filter: 30px;
   background-color: rgba(0, 0, 0, 0.3);
+  display: flex;
   height: 100vh;
+  justify-content: center;
+  left: 0;
+  position: fixed;
+  top: 0;
   width: 100vw;
   z-index: 99;
-  top: 0;
-  left: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  backdrop-filter: 30px;
 }
 
 .modal-container {
   background-color: var(--sand-color);
   height: 90%;
-  width: 90%;
   position: relative;
+  width: 90%;
 }
 
 .modal-slider-container {
-  width: 800px;
-  max-width: 80%;
   height: auto;
   margin: 0 auto;
-}
-
-.modal-links-container {
-  display: flex;
-  gap: 30px;
-  align-items: center;
+  max-width: 80%;
+  width: 800px;
 }
 
 .modal-content {
   display: grid;
   grid-template-columns: 30% 70%;
-  width: 80%;
   margin-inline: auto;
   margin-top: 1.5rem;
+  width: 80%;
 }
 
 .modal-content p,
@@ -46,14 +40,66 @@
   justify-self: flex-start;
   text-align: start;
 }
-.project-links {
-  display: block;
-}
 
 .modal-exit {
+  left: 1%;
   position: absolute;
   top: 2%;
-  left: 1%;
+}
+
+/* Links Container CSS*/
+.modal-links-container {
+  align-items: center;
+  display: flex;
+  gap: 30px;
+  overflow: visible;
+}
+
+.icon {
+  overflow: visible;
+  position: relative;
+}
+
+.icon::before,
+.icon::after {
+  --arrow-size: 10px;
+  --scale: 0;
+  --tooltip-color: rgba(0, 0, 0, 0.8);
+
+  content: "";
+  left: 50%;
+  position: absolute;
+  top: -0.25rem;
+  transform-origin: bottom center;
+  transition: 50ms transform;
+  transform: translateX(-50%) translateY(var(--translate-y, 0))
+    scale(var(--scale));
+}
+
+.icon::before {
+  --translate-y: calc(-100% - var(--arrow-size));
+
+  background-color: var(--tooltip-color);
+  border-radius: 0.3rem;
+  color: white;
+  content: attr(data-tooltip);
+  padding: 0.5rem;
+  text-align: center;
+  width: max-content;
+}
+
+.icon::after {
+  --translate-y: calc(-1 * var(--arrow-size));
+
+  border: var(--arrow-size) solid transparent;
+  border-top-color: var(--tooltip-color);
+  content: "";
+  transform-origin: top center;
+}
+
+.icon:hover::before,
+.icon:hover::after {
+  --scale: 1;
 }
 
 @media (max-width: 600px) {

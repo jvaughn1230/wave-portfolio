@@ -6,7 +6,6 @@ import { useProject } from "../../context/ProjectContext";
 
 const Projects = ({ setSelectedProject }) => {
   const { projects } = useProject();
-  console.log("Project Section: ", projects);
 
   // Mapping Projects
   const projectCards = projects.map((project) => (

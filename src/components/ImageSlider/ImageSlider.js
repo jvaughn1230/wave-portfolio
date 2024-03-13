@@ -5,8 +5,6 @@ import { useProject } from "../../context/ProjectContext";
 
 import { MdOutlineArrowBackIos } from "react-icons/md";
 import { MdOutlineArrowForwardIos } from "react-icons/md";
-// import { FaRegDotCircle } from "react-icons/fa";
-// import { FaRegCircle } from "react-icons/fa";
 
 const ImageSlider = () => {
   const [imageIndex, setImageIndex] = useState(0);

@@ -3,46 +3,45 @@
 }
 
 .waves {
-  width: 100vw;
-  height: 250px;
-  width: 1000%;
-  position: absolute;
-  z-index: 2;
   bottom: 0px;
+  height: 250px;
+  position: absolute;
+  width: 100vw;
+  width: 1000%;
+  z-index: 2;
 }
 
 .waves div {
   background-color: var(--dark-blue);
+  bottom: 0px;
+  position: absolute;
 
   mask: radial-gradient(184.46px at 50% 255px, #000 99%, #0000 101%)
       calc(50% - 200px) 0/400px 100%,
     radial-gradient(184.46px at 50% -155px, #0000 99%, #000 101%) 50% 100px/400px
       100% repeat-x;
-
-  position: absolute;
-  bottom: 0px;
 }
 
-/* TODO: Changed to responsive units */
 .waves div:nth-child(1) {
+  animation: move-wave 60s infinite linear;
+  bottom: 0;
   height: 150px;
   width: 6000px;
-  bottom: 0;
-  animation: move-wave 60s infinite linear;
 }
 
 .waves div:nth-child(2) {
-  height: 180px;
-  width: 200%;
-  opacity: 0.3;
   bottom: 10px;
+  height: 180px;
+  opacity: 0.3;
+  width: 200%;
 }
+
 .waves div:nth-child(3) {
-  right: 175px;
-  height: 180px;
-  width: 200%;
-  opacity: 0.3;
   bottom: 10px;
+  height: 180px;
+  opacity: 0.3;
+  right: 175px;
+  width: 200%;
 }
 
 @keyframes move-wave {

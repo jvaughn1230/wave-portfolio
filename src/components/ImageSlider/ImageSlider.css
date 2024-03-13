@@ -1,25 +1,24 @@
 .image-slider-container {
-  width: 100%;
   height: 100%;
   position: relative;
+  width: 100%;
 }
 
 .image-slider-img {
+  display: block;
+  height: 377px;
   object-fit: cover;
   width: 100%;
-  height: 377px;
-
-  display: block;
 }
 
 .image-slider-arrow {
   all: unset;
+  bottom: 0;
+  cursor: pointer;
   display: block;
+  padding: 1rem;
   position: absolute;
   top: 0;
-  bottom: 0;
-  padding: 1rem;
-  cursor: pointer;
 }
 
 .left {

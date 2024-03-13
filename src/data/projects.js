@@ -30,7 +30,7 @@ export const projectsData = [
     stack: ["React", "CSS", "NodeJS", "MongoDB", "Redux/RTK"],
     website: "https://riptidetracker.netlify.app/",
     frontEnd: "https://github.com/jvaughn1230/riptidebugtracker",
-    backend: "https://github.com/jvaughn1230/riptide-api",
+    backEnd: "https://github.com/jvaughn1230/riptide-api",
   },
   {
     id: 2,
@@ -63,7 +63,6 @@ export const projectsData = [
     ],
     website: "https://palmleaf-clothing.netlify.app/",
     frontEnd: "https://github.com/jvaughn1230/palmleaf-clothing",
-    backend: "",
   },
   {
     id: 4,
@@ -76,6 +75,5 @@ export const projectsData = [
     stack: ["HTML", "CSS", "JavaScript"],
     website: "https://simplescan.onrender.com/",
     frontEnd: "https://github.com/jvaughn1230/simple-scan",
-    backend: "",
   },
 ];

@@ -40,21 +40,21 @@ export const skills = [
     name: "JavaScript",
     icon: <IoLogoJavascript size={40} />,
     summary:
-      "I am well verse in core JavaScript including DOM manipulation when working with non-React front-ends.",
+      "I am well versed in the core JavaScript principles including DOM manipulation when working with non-React front-ends.",
   },
   {
     id: 6,
     name: "HTML/Bootstrap",
     icon: <FaHtml5 size={40} />,
     summary:
-      "I have a strong understanding of how to use HTML develop well structured and appealing front ends for applications.",
+      "I have a strong understanding of how to use HTML to develop well structured and appealing front ends for applications.",
   },
   {
     id: 7,
     name: "Bootstrap",
     icon: <BsBootstrapFill size={40} />,
     summary:
-      "I am experience with implementing the Bootstrap for front end development",
+      "I have experience implementing the Bootstrap library for efficient front end development",
   },
   // {
   //   id: 7,

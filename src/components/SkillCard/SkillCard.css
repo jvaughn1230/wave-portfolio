@@ -1,12 +1,12 @@
 .skill-card {
-  width: 22%;
-  transition: 0.5s ease;
-  opacity: 0;
-  transform: perspective(10em) rotateX(23deg);
   background-color: var(--primary);
+  border-radius: 30px;
   color: white;
   min-height: 250px;
-  border-radius: 30px;
+  opacity: 0;
+  transform: perspective(10em) rotateX(23deg);
+  transition: 0.5s ease;
+  width: 22%;
 }
 
 .skillcard-content {
@@ -26,17 +26,17 @@
 
 .skillCard h3 {
   font-size: var(--sub-header);
-  margin-top: 8px;
-  margin-bottom: 8px;
   font-weight: 550;
+  margin-bottom: 8px;
+  margin-top: 8px;
   text-align: center;
 }
 
 .skillCard p {
   font-size: var(--regular-text);
   font-weight: 400;
-  text-align: center;
   line-height: 24px;
+  text-align: center;
 }
 
 @media (max-width: 1000px) {
@@ -53,7 +53,7 @@
 
 @media (max-width: 600px) {
   .skill-card {
-    width: 80%;
     margin-inline: auto;
+    width: 80%;
   }
 }

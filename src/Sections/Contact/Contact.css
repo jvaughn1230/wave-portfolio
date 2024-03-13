@@ -1,8 +1,8 @@
 .contact-section {
-  overflow: hidden;
-  max-height: 100vh;
-  position: relative;
   background-color: var(--light-blue);
+  max-height: 100vh;
+  overflow: hidden;
+  position: relative;
   width: 100%;
 }
 
@@ -10,12 +10,14 @@
   color: var(--custom-white);
 }
 
-.contact-fish {
-  width: 50px;
+/* For Later Use */
+
+/* .contact-fish {
+  animation: hover-fish 1s infinite;
+  color: #ffad2e;
   height: auto;
   position: absolute;
-  color: #ffad2e;
-  animation: hover-fish 1s infinite;
+  width: 50px;
 }
 
 .contact-fish:nth-child(1) {
@@ -39,9 +41,8 @@
   100% {
     transition: translateY(30vh);
   }
-}
+} */
 
-/* For Later */
 /*
 @keyframes move-fish1 {
   0% {

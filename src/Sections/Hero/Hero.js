@@ -6,7 +6,7 @@ import WaveContainer from "../../components/WaveContainer/WaveContainer";
 const Hero = () => {
   return (
     <WaveContainer>
-      <div className="hero-section">
+      <div className="hero-section" id="main">
         <div className="hero-text">
           <div className="hero-header"> Hello, I'm Jeffrey Vaughn! </div>
           <Line color="blue" />

@@ -1,6 +1,5 @@
 import React from "react";
 import "./Modal.css";
-// import Slider from "../Slider/Slider";
 import ImageSlider from "../ImageSlider/ImageSlider";
 import Pill from "../Pill/Pill";
 import { FaGithub } from "react-icons/fa";
@@ -18,6 +17,7 @@ const Modal = ({ project }) => {
 
   const closeModal = () => setSelectedProject(null);
 
+  // Tech Stack Mapping
   const stack = project.stack;
 
   const pillStack = stack.map((tech, index) => (
@@ -37,10 +37,33 @@ const Modal = ({ project }) => {
           <h3>Description: </h3> <p>{project.description}</p>
           <h3>Links: </h3>
           <div className="modal-links-container">
-            <a className="image-link" href="github.com">
-              <FaGithub size={30} />
+            {project.frontEnd && (
+              <a
+                className="icon"
+                href={project.frontEnd}
+                data-tooltip="Front End Code"
+              >
+                <FaGithub size={30} />
+              </a>
+            )}
+
+            {project.backEnd && (
+              <a
+                href={project.backEnd}
+                className="icon"
+                data-tooltip="Back End Code"
+              >
+                <FaGithub size={30} />
+              </a>
+            )}
+
+            <a
+              href={project.website}
+              className="icon"
+              data-tooltip="Visit Site"
+            >
+              <FiExternalLink size={30} />
             </a>
-            <FiExternalLink size={30} />
           </div>
         </div>
 
